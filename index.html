@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>PearlsOpticians</title>
+        <link rel="stylesheet" href="cascade.css">
+    </head>
+    <script src="https://app.wotnot.io/chat-widget/3B23Wvrztobk17272884322084z4sek4.js" defer></script>   
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="jpeg/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PROUCTS</a></li>
+                    <li><a href="#">CONNECT</a></li>
+            
+                </ul>
+            </div>
+            <div class="content" >
+                <div class="left-col" >
+                    <h1>PearlsOpticians <br> Eye Wear & Eye Care</h1>
+                </div>
+                <div class="right-col" >
+                    <p> Click Here To Play</p>
+                    <img src="jpeg/play.png" id="icon">
+                </div>
+            </div>
+        </div> 
+        <audio id="mysong"> 
+        <source src="jpeg/awm.mp3" type="audio/mp3"> 
+        </audio>
+        <script>
+            var mysong = document.getElementById("mysong");
+            var icon = document.getElementById("icon");
+            
+            icon.onclick = function(){
+                if(mysong.paused){
+                    mysong.play();
+                    icon.src = "jpeg/pause.png";
+                }else{
+                    mysong.pause();
+                    icon.src = "jpeg/play.png"
+                }
+            }
+        </script>
+    </body>
+</html>
